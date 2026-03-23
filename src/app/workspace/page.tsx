@@ -641,16 +641,15 @@ export default function WorkspacePage() {
             {/* ===== HEADER ===== */}
             <header className="workspace-header" style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '0 20px', height: 60, background: 'rgba(3,3,3,0.8)',
+                padding: '0 28px', height: 72, background: 'rgba(3,3,3,0.85)',
                 backdropFilter: 'blur(16px)',
             }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 8, textDecoration: 'none', color: 'inherit' }}>
-                        <div style={{
-                            width: 16, height: 16, background: '#fff'
-                        }}>
-                        </div>
-                        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 600, fontSize: 15 }}>founders.ai</span>
+                    <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', color: 'inherit' }}>
+                        <img src="/foundingai-logo.svg" alt="Foundingai.in logo" style={{ width: 44, height: 44, display: 'block' }} />
+                        <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22, letterSpacing: '-0.02em' }}>
+                            <span style={{ color: '#ffffff' }}>Founding</span><span style={{ background: 'linear-gradient(135deg, #A78BFA 0%, #38BDF8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ai</span><span style={{ color: 'rgba(255,255,255,0.45)', fontSize: 16 }}>.in</span>
+                        </span>
                     </Link>
                     {businessProfile && (
                         <span style={{
