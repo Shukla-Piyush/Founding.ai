@@ -20,9 +20,9 @@ import LaunchTab from './LaunchTab';
 
 // ===> DEPARTMENT COLORS (Rich Glass Theme)
 const DEPT_COLORS: Record<string, string> = {
-    orchestrator: '#38BDF8', finance: '#10B981', marketing: '#818CF8',
-    growth: '#F43F5E', market_research: '#F59E0B', tech: '#06B6D4',
-    licensing: '#A855F7', supply: '#EAB308', launch: '#EC4899',
+    orchestrator: '#5BA8D4', finance: '#3DBFA0', marketing: '#7BAFD9',
+    growth: '#D46B82', market_research: '#D4A24F', tech: '#40B5CC',
+    licensing: '#9482D4', supply: '#C4A830', launch: '#D470A0',
 };
 const PHASE_LABELS: Record<string, string> = {
     INITIAL_PROPOSAL: 'Initial Proposals',
@@ -641,14 +641,14 @@ export default function WorkspacePage() {
             {/* ===== HEADER ===== */}
             <header className="workspace-header" style={{
                 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                padding: '0 28px', height: 72, background: 'rgba(3,3,3,0.85)',
+                padding: '0 28px', height: 72, background: 'rgba(10, 22, 40, 0.85)',
                 backdropFilter: 'blur(16px)',
             }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                     <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: 12, textDecoration: 'none', color: 'inherit' }}>
                         <img src="/foundingai-logo.svg" alt="Foundingai.in logo" style={{ width: 44, height: 44, display: 'block' }} />
                         <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: 22, letterSpacing: '-0.02em' }}>
-                            <span style={{ color: '#ffffff' }}>Founding</span><span style={{ background: 'linear-gradient(135deg, #A78BFA 0%, #38BDF8 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ai</span><span style={{ color: 'rgba(255,255,255,0.45)', fontSize: 16 }}>.in</span>
+                            <span style={{ color: '#EBF2F7' }}>Founding</span><span style={{ background: 'linear-gradient(135deg, #CBDDE9 0%, #2872A1 100%)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', backgroundClip: 'text' }}>ai</span><span style={{ color: 'rgba(203,221,233,0.45)', fontSize: 16 }}>.in</span>
                         </span>
                     </Link>
                     {businessProfile && (
@@ -749,7 +749,7 @@ export default function WorkspacePage() {
                         display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
                         height: '60%', textAlign: 'center',
                     }}>
-                        <div style={{ width: 40, height: 40, border: '1px solid var(--border-primary)', borderTopColor: '#fff', borderRadius: '50%', animation: 'spin 1s linear infinite', marginBottom: 24 }} />
+                        <div style={{ width: 40, height: 40, border: '1px solid var(--border-primary)', borderTopColor: '#2872A1', borderRadius: '50%', animation: 'spin 1s linear infinite', marginBottom: 24 }} />
                         <h3 style={{ fontSize: 20, fontWeight: 500, marginBottom: 8 }}>
                             {stage === 'analyzing_business' && 'Analyzing Your Business...'}
                             {stage === 'generating_agents' && 'Generating AI Executive Team...'}
