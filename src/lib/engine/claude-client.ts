@@ -28,7 +28,7 @@ export async function callClaude(
             { role: 'system', content: systemPrompt },
             { role: 'user', content: userMessage }
         ],
-        maxTokens: options?.maxTokens || 4096,
+        maxTokens: Math.min(4096, options?.maxTokens || 4096),
         temperature: options?.temperature ?? 0.7,
     });
 
@@ -58,7 +58,7 @@ export async function callClaudeJSON<T>(
                     { role: 'system', content: jsonSystemPrompt },
                     { role: 'user', content: userMessage }
                 ],
-                maxTokens: options?.maxTokens || 4096,
+                maxTokens: Math.min(4096, options?.maxTokens || 4096),
                 temperature: options?.temperature ?? 0.7,
                 responseFormat: { type: 'json_object' }
             });
